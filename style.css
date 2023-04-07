@@ -1,0 +1,61 @@
+body {
+	background-color: #f2f2f2;
+	font-family: Arial, sans-serif;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 20px;
+  }
+  h1 {
+	font-size: 36px;
+	text-align: center;
+  }
+  input[type="text"] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	font-weight : bold;
+	border-radius: 4px;
+	background-color: #f8d49d; /* 검색 input의 배경 색상 */
+  }
+  #result {
+	width: 100%;
+	font-weight : bold;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #d0936d; /* 결과값이 나오는 div의 배경 색상 */
+	box-shadow: 5px 5px 5px #888888; /* 그림자 효과 */
+	color: #fff;
+  }
+
+  .spinner {
+	margin: 0 auto;
+	width: 50px;
+	height: 50px;
+	background-color: #333;
+	border-radius: 50%;
+	animation: spin 1s ease-in-out infinite;
+  }
+  
+  /* 로딩 스피너 애니메이션 */
+  @keyframes spin {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+  /* API Key styles */
+  #get_api_key {
+	border: none;
+	border-radius: 30px;
+	flex: 1;
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+/*
